@@ -1,0 +1,27 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+
+# Django
+*.log
+*.pot
+local_settings.py
+db.sqlite3
+media
+
+# Environments
+.env
+venv11/
+ENV/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Linux
+*~
