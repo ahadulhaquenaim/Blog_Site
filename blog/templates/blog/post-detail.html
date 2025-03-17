@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    This Post Title
+    {{ post.title }}
 {% endblock %}
 
 {% block css_files %}
@@ -12,30 +12,19 @@
 {% block content %}
 
     <section id="summary">
-        <h2>Post Title</h2>
+        <h2>{{ post.title }}</h2>
         <article>
-            <img src="{% static 'blog/images/mountain.png' %}" alt="Post Title"/>
-            <address>By Naim</address>
+            <img src="{% static 'blog/images/'|add:post.image %}" alt="{{ post.title }}"/>
+            <address>By {{ post.author }}</address>
             <div>
                 last updated on
-                <time>March 10th</time>
+                <time>{{ post.date|date:'d M Y' }}</time>
             </div>
         </article>
     </section>
 
     <main>
-        <p>
-            Hiking in the mountains offers a unique blend of adventure and tranquility. The breathtaking views, fresh
-            air, and the sense of accomplishment after reaching the summit make it an unforgettable experience.
-        </p>
-        <p>
-            Hiking in the mountains offers a unique blend of adventure and tranquility. The breathtaking views, fresh
-            air, and the sense of accomplishment after reaching the summit make it an unforgettable experience.
-        </p>
-        <p>
-            Hiking in the mountains offers a unique blend of adventure and tranquility. The breathtaking views, fresh
-            air, and the sense of accomplishment after reaching the summit make it an unforgettable experience.
-        </p>
+        {{ post.content|linebreaks }}
     </main>
 
 {% endblock %}
