@@ -17,12 +17,14 @@
             <img src="{% static 'blog/images/naim.jpg' %}" alt="Naim - author of the blog">
             <h2>Naim's Blog</h2>
         </header>
-        <p>Hi, I am Naim and I love to blog about tech and the world!</p>
+        <p>Hi, I am Naim and I love to blog about tech</p>
     </section>
     <section id="latest-posts">
         <h2>My latest thoughts</h2>
         <ul>
+            {% for post in posts %}
             {% include 'blog/includes/post.html' %}
+            {% endfor %}
         </ul>
     </section>
     <section id="about">
