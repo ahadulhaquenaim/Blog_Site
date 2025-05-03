@@ -150,11 +150,40 @@ main {
 
 #alert a {
     text-decoration: none;
-    border:1px solid #e83c5b;
+    border: 1px solid #e83c5b;
     background-color: #e8081c;
     color: white;
     padding: 0.25rem 1rem;
     border-radius: 5px;
 
+}
+
+#comments {
+    width: 90%;
+    max-width: 60rem;
+    margin: 3rem auto;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    padding: 1rem 2rem;
+}
+
+#comments ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#comments li {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ccc;
+}
+
+#comments li:last-of-type {
+    border-bottom: none;
+}
+
+#comments h3 {
+    color: #666666;
 }
 
