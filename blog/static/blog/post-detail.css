@@ -122,3 +122,39 @@ main {
 
 }
 
+.errorlist {
+    list-style: none;
+    margin: 0.5rem 0;
+    padding: 0;
+    color: #ff0000;
+}
+
+.invalid label {
+    color: #ff0000;
+}
+
+.invalid input,
+.invalid textarea {
+    border-color: #ff0000;
+    background-color: #f18080;
+}
+
+#alert {
+    margin: 8rem auto 3rem auto;
+    border: 1px solid #e83c5b;
+    background-color: #f8d7da;
+    padding: 1rem;
+    width: 90%;
+    max-width: 40rem;
+}
+
+#alert a {
+    text-decoration: none;
+    border:1px solid #e83c5b;
+    background-color: #e8081c;
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+
+}
+
